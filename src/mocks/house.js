@@ -1,7 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-const obj = {
-  House: [
+export const mockData = [
     {
       id: 1,
       houseName: 'Cozy Cottage',
@@ -62,13 +59,4 @@ const obj = {
       priceForNight: 300,
       imgHouse: ['image18.jpg', 'image19.jpg', 'image20.jpg']
     }
-  ]
-};
-
-export default function handler(req, res) {
-  if (req.method === "GET") {
-    res.status(200).json(obj);
-  } else {
-    res.status(405).json({ message: "Method not allowed" });
-  }
-}
+  ];

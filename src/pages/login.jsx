@@ -20,8 +20,7 @@ const Login = () => {
       if (user) {
         localStorage.setItem("isLogged", true);
         localStorage.setItem("username", user.username);
-        router.push("/dashboard"); // Reindirizza alla dashboard
-      } else {
+        router.push("/dashboard"); 
         throw new Error("Credenziali non valide");
       }
     } catch (error) {
