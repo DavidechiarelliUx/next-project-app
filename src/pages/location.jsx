@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { roomList } from "../mocks/reservation";
 import Link from "next/link";
-
+import Navbar from '@/components/Navbar';
 export default function Location() {
   const [selectedLocation, setSelectedLocation] = useState(null);
 
@@ -32,6 +32,7 @@ export default function Location() {
         </div>
       ) : (
         <>
+        <Navbar/>
           <h2>Locations</h2>
           {roomList.length ? onLocationRender() : <p>Loading...</p>}
         </>

@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { auth } from "../mocks/auth";
+import Navbar from '@/components/Navbar';
+import styles from "@/styles/dashboard.module.scss"
+
 
 const Dashboard = () => {
   const router = useRouter();
@@ -31,7 +34,8 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
+    <div className={styles.Dashboard}>
+      <Navbar />
       <h1>Dashboard</h1>
       <img src={imgProfile} alt="Profile" />
       <h2>{username}</h2>

@@ -1,7 +1,6 @@
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
-import Link from 'next/link'
-
+import Head from 'next/head';
+import Navbar from '@/components/Navbar';
+import styles from '@/styles/Home.module.scss';
 
 export default function Home() {
   return (
@@ -13,34 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.Home}>
-      {/* {location.pathname === "/" && (
-        <>
-        <p>HomePage</p>
-        <h2>Homepage</h2>
-        </>
-        )}
-        
-      <Outlet /> */}
-
-      <p>HomePage</p>
-      <h2>Homepage</h2>
-      <p>
-        <Link href="/about-us">Pagina About </Link>
-      </p>
-      <p>
-        <Link href="/location">Pagina Location</Link>
-      </p>
-      <p>
-        <Link href="/home">HomePage</Link>
-      </p>
-      <p>
-        <Link href="/login">Login</Link>
-      </p>
-      <p>
-        <Link href="/housePage">House</Link>
-      </p>
-        
-    </div>
+        <Navbar />
+      </div>
     </>
-  )
+  );
 }
+

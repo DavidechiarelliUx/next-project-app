@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { auth } from "../mocks/auth";
+import styles from "@/styles/login.module.scss"
+import Navbar from '@/components/Navbar';
 
 const Login = () => {
   const router = useRouter();
@@ -29,24 +31,27 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={onHandleSubmit}>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={onHandleUsername}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={onHandlePassword}
-        />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+    <div className={styles.Login}>
+      <Navbar/>
+    <h1>Login</h1>
+    <form onSubmit={onHandleSubmit}>
+      <input
+        type="text"
+        placeholder="Username"
+        value={username}
+        onChange={onHandleUsername}
+        className={styles.input}
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={onHandlePassword}
+        className={styles.input}
+      />
+      <button type="submit" className={styles.button}>Login</button>
+    </form>
+  </div>
   );
 };
 

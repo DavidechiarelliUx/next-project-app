@@ -1,0 +1,44 @@
+@import "@/styles/navbar.module.scss";
+
+.Dashboard {
+  text-align: center;
+
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  h2 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  p {
+    color: #666;
+    margin-top: 10px;
+  }
+
+  button {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+}
