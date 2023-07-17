@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { auth } from "../mocks/auth";
 import styles from "@/styles/login.module.scss"
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar'
 
 const Login = () => {
   const router = useRouter();
