@@ -12,7 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.Home}>
-   
+      
+    
+<p>location-about-housePage-home-login</p>
+
+
       </div>
     </>
   );
