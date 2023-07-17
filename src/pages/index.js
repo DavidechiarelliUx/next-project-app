@@ -1,8 +1,11 @@
 import Head from 'next/head';
+import React, { createContext, useContext, useState } from 'react';
 
 import styles from '@/styles/Home.module.scss';
 
 export default function Home() {
+
+  const ColorContext = createContext('white');
   return (
     <>
       <Head>
@@ -15,8 +18,23 @@ export default function Home() {
       
     
 <p>location-about-housePage-home-login</p>
-
-
+{/* navbar cancellata per vercel da rifare */}
+{/* <nav className={styles.navbar}>
+      <ul>
+        <li>
+          <Link href="/housePage">House</Link>
+        </li>
+        <li>
+          <Link href="/location">Location</Link>
+        </li>
+        <li>
+          <Link href="/about-us">Pagina About</Link>
+        </li>
+        <li>
+          <Link href="/login">Login</Link>
+        </li>
+      </ul>
+    </nav> */}
       </div>
     </>
   );
