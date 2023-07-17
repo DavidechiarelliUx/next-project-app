@@ -1,7 +1,7 @@
 import styles from "@/styles/housePage.module.scss";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import Navbar from '@/components/Navbar'
+
 export default function SearchHouse({ data }) {
   // useEffect(() => {
   //     fetch("https://api.npoint.io/42a9520e5ee53e455f61")
@@ -14,7 +14,7 @@ export default function SearchHouse({ data }) {
     return (
       <div className={styles.page}>
      <div>
-      <Navbar/>
+     
      </div>
         <div>Qui puoi trovare la casa dei tuoi sogni</div>
         <h2>House</h2>

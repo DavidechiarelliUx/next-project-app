@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { auth } from "../mocks/auth";
 import styles from "@/styles/login.module.scss"
-import Navbar from '@/components/Navbar'
+
 
 const Login = () => {
   const router = useRouter();
@@ -32,7 +32,7 @@ const Login = () => {
 
   return (
     <div className={styles.Login}>
-      <Navbar/>
+
     <h1>Login</h1>
     <form onSubmit={onHandleSubmit}>
       <input
